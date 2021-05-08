@@ -5,9 +5,10 @@
     <title>Footer template</title>
 </head>
 <body>
-<footer id="fragmentTag" th:fragment="footer1">
+<footer id="fragmentTag" th:fragment="footer1(title,subtitle)">
   <div class="container" >
-    <h1>Hello there</h1>
+    <h1>Hello there <span th:text="${title}"></span></h1>
+      <h1>you are <span th:text="${subtitle}"></span></h1>
     <h2>How are you </h2>
     <h1>hope you are having a great day</h1>
     <p>mooooo</p>

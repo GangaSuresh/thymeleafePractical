@@ -44,6 +44,8 @@ public class MyController {
     //handler for including fragments
     @GetMapping("/service")
     public String serviceHandler(Model m){
+        m.addAttribute("title","Ganga");
+        m.addAttribute("subtitle",21);
         return "service";
     }
 
