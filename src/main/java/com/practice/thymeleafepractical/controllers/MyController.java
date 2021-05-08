@@ -34,6 +34,17 @@ public class MyController {
     @GetMapping("/condition")
     public String conditionalHandler(Model m){
         System.out.println("conditional handler executed..");
+        m.addAttribute("isActive",false);
+        m.addAttribute("gender","F");
+        List<Integer> list=List.of(233);
+        m.addAttribute("mylist",list);
         return "condition";
     }
+
+    //handler for including fragments
+    @GetMapping("/service")
+    public String serviceHandler(Model m){
+        return "service";
+    }
+
 }
