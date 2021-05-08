@@ -49,4 +49,12 @@ public class MyController {
         return "service";
     }
 
+    //handler for inheriting
+    @GetMapping("/newabout")
+    public String newAbout(Model m){
+        System.out.println("here");
+
+        return "aboutnew";
+    }
+
 }
